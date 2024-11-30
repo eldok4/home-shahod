@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    direction: rtl;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: gold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+    padding: 20px;
+    background: linear-gradient(90deg, #ffd700, #ff4500, #9400d3, #1e90ff);
+    background-size: 400% 400%;
+    animation: bgColorChange 10s infinite;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+}
+
+.hero .btn {
+    background: gold;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.category h3 {
+    margin: 15px 0;
+}
+
+.category .btn {
+    display: inline-block;
+    margin: 10px 0;
+    background: #333;
+    color: gold;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Animation */
+@keyframes bgColorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .header .logo img {
+        width: 60px;
+    }
+}
